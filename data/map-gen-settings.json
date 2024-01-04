@@ -1,0 +1,95 @@
+{
+	"_terrain_segmentation_comment": "地图生成器图形用户界面中“水域”的倒数。",
+	"terrain_segmentation": 1,
+	"_water_comment": [
+		"相当于地图生成器图形用户界面中的 “水域覆盖率”。更高的覆盖率意味着更大的海洋中有更多的水。",
+		"Water level = 10 * log2(this value)"
+	],
+	"water": 1,
+	"_comment_width+height": "地图的宽度和高度，以瓦片为单位；0 表示无限大",
+	"width": 0,
+	"height": 0,
+	"_starting_area_comment": "“起始区域”的乘数",
+	"starting_area": 1,
+	"peaceful_mode": false,
+	"autoplace_controls": {
+		"coal": {
+			"frequency": 1,
+			"size": 1,
+			"richness": 1
+		},
+		"stone": {
+			"frequency": 1,
+			"size": 1,
+			"richness": 1
+		},
+		"copper-ore": {
+			"frequency": 1,
+			"size": 1,
+			"richness": 1
+		},
+		"iron-ore": {
+			"frequency": 1,
+			"size": 1,
+			"richness": 1
+		},
+		"uranium-ore": {
+			"frequency": 1,
+			"size": 1,
+			"richness": 1
+		},
+		"crude-oil": {
+			"frequency": 1,
+			"size": 1,
+			"richness": 1
+		},
+		"trees": {
+			"frequency": 1,
+			"size": 1,
+			"richness": 1
+		},
+		"enemy-base": {
+			"frequency": 1,
+			"size": 1,
+			"richness": 1
+		}
+	},
+	"cliff_settings": {
+		"_name_comment": "悬崖设置",
+		"name": "cliff",
+		"_cliff_elevation_0_comment": "Elevation of first row of cliffs",
+		"cliff_elevation_0": 10,
+		"_cliff_elevation_interval_comment": [
+			"Elevation difference between successive rows of cliffs.",
+			"This is inversely proportional to 'frequency' in the map generation GUI. Specifically, when set from the GUI the value is 40 / frequency."
+		],
+		"cliff_elevation_interval": 40,
+		"_richness_comment": "在地图生成器图形用户界面中称为 “悬崖连贯”。0 表示没有悬崖，10 表示所有悬崖行都是实心的",
+		"richness": 0
+	},
+	"_property_expression_names_comment": [
+		"Overrides for property value generators (map type)",
+		"Leave 'elevation' blank to get 'normal' terrain.",
+		"Use 'elevation': '0_16-elevation' to reproduce terrain from 0.16.",
+		"Use 'elevation': '0_17-island' to get an island.",
+		"Moisture and terrain type are also controlled via this.",
+		"'control-setting:moisture:frequency:multiplier' is the inverse of the 'moisture scale' in the map generator GUI.",
+		"'control-setting:moisture:bias' is the 'moisture bias' in the map generator GUI.",
+		"'control-setting:aux:frequency:multiplier' is the inverse of the 'terrain type scale' in the map generator GUI.",
+		"'control-setting:aux:bias' is the 'terrain type bias' in the map generator GUI."
+	],
+	"property_expression_names": {
+		"control-setting:moisture:frequency:multiplier": "1",
+		"control-setting:moisture:bias": "0",
+		"control-setting:aux:frequency:multiplier": "1",
+		"control-setting:aux:bias": "0"
+	},
+	"starting_points": [
+		{
+			"x": 0,
+			"y": 0
+		}
+	],
+	"_seed_comment": "使用 “null” 表示随机种子，使用数字表示特定种子。",
+	"seed": null
+}
